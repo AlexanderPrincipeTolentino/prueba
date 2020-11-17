@@ -19,12 +19,12 @@ public class PersonaServiceImpl implements PersonaService {
 	
 	@Override
 	public Mono<Persona> registrar(Persona persona) {
-		return null;
+		return Mono.justOrEmpty(personaRepository.save(persona));
 	}
 
 	@Override
 	public Mono<Persona> modificar(Persona persona) {
-		return null;
+		return Mono.justOrEmpty(personaRepository.save(persona));
 	}
 
 	@Override
