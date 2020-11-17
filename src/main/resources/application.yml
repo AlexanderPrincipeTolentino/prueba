@@ -1,0 +1,29 @@
+server:
+  port: 9899
+  servlet:
+    context-path: /custom-path
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    
+  datasource:
+#    url: jdbc:mysql://qallarix-mysql-dev.mysql.database.azure.com:3306/rrhh-dev?autoReconnect=true&useSSL=false&serverTimezone=UTC
+#    username: userqallarixdev@qallarix-mysql-dev
+#    password: Qallarix123@
+    url: jdbc:mysql://localhost:3306/embajador?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: rrlalh25
+    
+application:
+  swagger:
+    title: '@project.name@'
+    description: '@project.description@'
+    version: '@project.version@'
+    contact:
+      name: Telefonica del Peru
+      url: https://www.telefonica.com.pe
+      email: correo
+    license:
+      type: copyright
+      url: https://www.telefonica.com.pe
